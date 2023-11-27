@@ -1,0 +1,24 @@
+/* About.css */
+
+.design {
+  
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(180deg,#f480fc,#797c7a22 60%);
+
+}
+
+h1 {
+  font-size: 28px;
+  color: #0b0505;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2.5;
+  color: #494949;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+

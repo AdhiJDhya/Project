@@ -3,24 +3,25 @@ import p2_img from './product_2.png'
 import p3_img from './product_3.png'
 import p4_img from './product_4.png'
 
-let data_product = [
+let data1 = [
   {
     id:1,
-    name:"Children Care",
+    name:"CHILDCARE",
     image:p1_img,
   },
   {id:2,
-    name:"Cooking",
+    name:"COOKING",
     image:p2_img,
   },
   {id:3,
-    name:"Home Cleaning",
+    name:"DOMESTIC CLEAN",
     image:p3_img,
   },
   {id:4,
-    name:"Garden cleaning",
+    name:"GARDEN CLEANING",
     image:p4_img,
   },
+
 ];
 
-export default data_product;
+export default data1;

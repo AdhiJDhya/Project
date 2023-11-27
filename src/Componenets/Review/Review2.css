@@ -1,0 +1,62 @@
+/* Review2.css */
+.review1 {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 0px;
+    border-radius: 8px;
+    max-width:100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg,#f480fc,#797c7a22 60%);
+    text-align: center;
+  }
+  
+  .rating {
+    color: #f81e0e; 
+  }
+  
+  .comment {
+    margin-top: 10px;
+  }
+  
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 30px;
+   
+  }
+  .homepage-container
+  {
+    background: linear-gradient(180deg,#f480fc,#797c7a22 60%);
+
+  }
+  
+  .ui{
+    text-align: center;
+  }
+  .ui h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+  }
+  .star
+  {
+    font-size: large;
+    padding: 2%;
+  }
+  .c{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .ui h2{
+    color: black;
+    font-size: 300%;
+  }
+  .ok
+  {
+    font-size: 170%;
+  }
+
+  

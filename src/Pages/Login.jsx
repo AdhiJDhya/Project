@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
@@ -49,7 +49,7 @@ const styles = {
   },
   button: {
     marginTop: 40,
-    width: '100%',
+    width: '25%',
     fontSize: '1.5rem',
     padding: '15px',
   },
@@ -57,8 +57,23 @@ const styles = {
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const openNewTab = () => {
-    navigate('/signup');
+  const [password, setPassword] = useState('');
+  const [passwordError, setPasswordError] = useState(false);
+
+  const handlePasswordChange = (event) => {
+    const newPassword = event.target.value;
+    setPassword(newPassword);
+
+    // Add your password validation logic here
+    const isValidPassword = newPassword.length >= 8; // Example: Password must be at least 8 characters
+    setPasswordError(!isValidPassword);
+  };
+
+  const handleSubmit = () => {
+    // Add your login logic here
+    if (!passwordError) {
+      navigate('/Home');
+    }
   };
 
   return (
@@ -86,6 +101,10 @@ const LoginPage = () => {
             label="Password"
             type="password"
             variant="outlined"
+            error={passwordError}
+            helperText={passwordError && 'Password must be at least 8 characters'}
+            value={password}
+            onChange={handlePasswordChange}
           />
           <Button
             style={styles.button}
@@ -93,10 +112,11 @@ const LoginPage = () => {
             fullWidth
             variant="contained"
             color="secondary"
+            onClick={handleSubmit}
           >
-            Log In
+            <Link to="/Home">Log in</Link>
+        
           </Button>
-          
         </Paper>
       </Container>
     </ThemeProvider>

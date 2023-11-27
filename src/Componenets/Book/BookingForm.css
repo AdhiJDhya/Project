@@ -1,0 +1,82 @@
+.done h1{
+  font-size: 55px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(240, 236, 240);
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input{
+  width: 80vw;
+  height: 5vh;
+}
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.body button {
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #b30006;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.confirmation-container {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+.done select{
+  width: 30%;
+  height: 10%;
+  padding: 1%;
+  font-size: 150%;
+}
+.done option{
+  text-align: center;
+  font-size: 80%;
+}
